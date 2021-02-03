@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Button from './Button/Button'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Button text='Push me' size='lg' type="sOutline"/>
+    <Button text='Push me' size='lg' type="pOutline"/>
+    <Button text='Push me' size='lg' type="primary"/>
+    <Button text='Push me' size='lg' type="secondary"/>
+    <Button />
+    <Button text='Push me' size='sm' type="primary"/>
+    <Button text='Push me' size='' type="secondary"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
