@@ -1,0 +1,35 @@
+body{
+    background-color: wheat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .btnAnimate{
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display:inline-block;
+    margin:10px;
+    font-family:inherit;
+    border-radius:22px;
+    animation: radial-pulse 1s infinite;
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    transition: .5s;
+  }
+  
+  .btnAnimate:hover{
+    background-position: 0 0;
+  }
+  .btnAnimate:focus{
+    outline: none;
+  }
+  
+  @keyframes radial-pulse {
+    from {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+    }
+   
+    to {
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  }
+  

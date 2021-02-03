@@ -2,18 +2,18 @@ import PropTypes from 'prop-types';
 import './style.scss';
 
 
-App.propTypes={
+Button.propTypes={
   text:PropTypes.string,
   size:PropTypes.string,
   type:PropTypes.string
 }
-App.defaultProps={
+Button.defaultProps={
   text:'Add',
   size:'lg',
   type:'primary'
 }
 
-function App({text,size,type}) {
+function Button({text,size,type}) {
   const styleSize=()=>{
     switch(size){
     case 'lg':return{
@@ -79,4 +79,4 @@ function App({text,size,type}) {
   );
 }
 
-export default App;
+export default Button;
